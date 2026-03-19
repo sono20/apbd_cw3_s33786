@@ -2,5 +2,6 @@
 
 public class Laptop
 {
-    
+    private string _processor;
+    private string GPU;
 }
