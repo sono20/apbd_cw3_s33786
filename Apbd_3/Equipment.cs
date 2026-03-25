@@ -18,9 +18,8 @@ public abstract class Equipment
         
     }
     
-    public bool IsAvailable { get; set; } = true;
     
-    public void Rent() => IsAvailable = false;
-    public void Return() => IsAvailable = true;
+    public void Rent() => availability = false;
+    public void Return() => availability = true;
 
 }
