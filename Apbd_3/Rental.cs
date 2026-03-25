@@ -9,6 +9,7 @@ public class Rental
     public DateTime rentalDate { get; set; }
     public DateTime dueDate { get; set; }
     public DateTime? returnDate { get; set; }
+    public decimal? penalty {get; set;}
 
     public Rental(Person renter, Equipment equipment, int days)
     {
