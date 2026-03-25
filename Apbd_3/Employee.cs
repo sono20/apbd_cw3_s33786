@@ -2,6 +2,10 @@
 
 public class Employee : Person
 {
+    public override int maxRentals
+    {
+        get => 5;
+    }
     public decimal salary {get; set;}
     public string department {get; set;}
 

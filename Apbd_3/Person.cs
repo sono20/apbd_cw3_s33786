@@ -7,6 +7,7 @@ public abstract class Person
     public string name { get; set; }
     public string surname { get; set; }
     public string userType { get; set; }
+    public abstract int maxRentals { get; }
 
     public Person(string name, string surname, string userType)
     {

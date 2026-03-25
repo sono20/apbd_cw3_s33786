@@ -2,6 +2,7 @@
 
 public class Student : Person
 {
+    public override int maxRentals {get => 2; }
     public string indexNumber {get; set;}
     public string fieldOfStudy {get; set;}
 
@@ -10,5 +11,5 @@ public class Student : Person
     {
         this.indexNumber = indexNumber;
         this.fieldOfStudy = fieldOfStudy;
-    }
+    } 
 }
