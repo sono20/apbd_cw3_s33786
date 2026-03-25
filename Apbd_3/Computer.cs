@@ -5,7 +5,7 @@ public class Computer : Equipment
     public int ramGb { get; set; }
     public int storageGb { get; set; }
 
-    public Computer(int id, string name, int availability, string commonData, int ramGb, int storageGb) : base(id, name,
+    public Computer(string name, bool availability, string commonData, int ramGb, int storageGb) : base(name,
         availability, commonData)
     {
         this.ramGb = ramGb;

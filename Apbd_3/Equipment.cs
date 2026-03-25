@@ -8,16 +8,21 @@ public abstract class Equipment
     
     public int id { get; set; }
     public string name { get; set; }
-    public int availability { get; set; }
+    public bool availability { get; set; }
     public string commonData {get; set;}
 
-    public Equipment(int id, string name, int availability, string commonData)
+    public Equipment(string name, bool availability, string commonData)
     {
-        this.id = _nextId++;
+        id = _nextId++;
         this.name = name;
         this.availability = availability;
         this.commonData = commonData;
         
     }
+    
+    public bool IsAvailable { get; set; } = true;
+    
+    public void Rent() => IsAvailable = false;
+    public void Return() => IsAvailable = true;
 
 }
